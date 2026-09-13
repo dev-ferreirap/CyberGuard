@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberGuard Segurança digital em linguagem simples</title>
+<meta name="description" content="CyberGuard ensina, em linguagem simples, como se proteger de phishing, senhas fracas, golpes online, malware e roubo de contas.">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.velocimetro{
+  position: relative;
+  width: 280px;
+  height: 155px;
+  margin: 30px auto 15px;
+  overflow: hidden;
+}
+
+.velocimetro-arco{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 15px;
+  top: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 270deg,
+    #3423cd 0deg,
+    #192ea7 var(--progresso),
+    #e5e5e5 var(--progresso),
+    #e5e5e5 180deg,
+    transparent 180deg
+  );
+}
+
+.velocimetro-arco::after{
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  left: 20px;
+  top: 20px;
+  background: var(--bg);
+  border-radius: 50%;
+}
+
+.velocimetro-porcentagem{
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.protecao-mensagem{
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="wordmark">Cyber<span>Guard</span></a> 
+    <nav class="main-nav">
+      <a href="index.html" class="current">Início</a>
+      <a href="checklist.html">Checklist</a>
+      <a href="sobre.html">Sobre o projeto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow-line">Educação em cibersegurança para o dia a dia</p>
+        <h1>Entender uma ameaça digital é a melhor forma de evitá-la</h1>
+        <p class="lede">O CyberGuard explica, sem jargão técnico, como funcionam os golpes e ataques mais comuns na internet e o que fazer, na prática, para não cair neles.</p>
+        <div class="hero-actions">
+          <a href="phishing.html" class="btn btn-primary">Começar pela primeira lição</a>
+          <a href="checklist.html" class="link-arrowless">Fazer o checklist de segurança</a>
+        </div>
+      </div>
+      <div class="hero-facts">
+        <div>
+          <div class="fact-num">5</div>
+          <div class="fact-label">temas essenciais, do phishing ao roubo de contas</div>
+        </div>
+        <div>
+          <div class="fact-num">0</div>
+          <div class="fact-label">conhecimento técnico necessário para começar</div>
+        </div>
+        <div>
+          <div class="fact-num">10 min</div>
+          <div class="fact-label">tempo médio de leitura de cada lição</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>A trilha de aprendizado</h2>
+        <p>Cinco lições curtas, pensadas para quem nunca estudou segurança digital. Cada uma explica um tipo de ameaça, como reconhecê-la e como se proteger.</p>
+      </div>
+
+      <div class="lesson-list">
+        <div class="lesson-row">
+          <div class="lesson-index">01</div>
+          <div class="lesson-body">
+            <h3>Phishing</h3>
+            <p>Como golpistas se passam por bancos, empresas e serviços conhecidos para roubar seus dados.</p>
+          </div>
+          <a href="phishing.html" class="lesson-link">Ver lição →</a>
+        </div>
+
+        <div class="lesson-row">
+          <div class="lesson-index">02</div>
+          <div class="lesson-body">
+            <h3>Senhas fracas</h3>
+            <p>Por que senhas simples ou repetidas são a porta de entrada mais usada em invasões de conta.</p>
+          </div>
+          <a href="senhas.html" class="lesson-link">Ver lição →</a>
+        </div>
+
+        <div class="lesson-row">
+          <div class="lesson-index">03</div>
+          <div class="lesson-body">
+            <h3>Golpes online</h3>
+            <p>Falsas promoções, vagas de emprego, sorteios e cobranças os golpes mais comuns fora do e-mail.</p>
+          </div>
+          <a href="golpes.html" class="lesson-link">Ver lição →</a>
+        </div>
+
+        <div class="lesson-row">
+          <div class="lesson-index">04</div>
+          <div class="lesson-body">
+            <h3>Malware</h3>
+            <p>O que são vírus, spyware e ransomware, e como eles costumam chegar até o seu dispositivo.</p>
+          </div>
+          <a href="malware.html" class="lesson-link">Ver lição →</a>
+        </div>
+
+        <div class="lesson-row">
+          <div class="lesson-index">05</div>
+          <div class="lesson-body">
+            <h3>Roubo de contas</h3>
+            <p>Como uma conta é sequestrada na prática e os passos para recuperar o acesso e reduzir o estrago.</p>
+          </div>
+          <a href="contas.html" class="lesson-link">Ver lição →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2>Por que isso importa</h2>
+        <p class="lede">A maioria dos ataques contra pessoas comuns não depende de técnica avançada. Eles dependem de pressa, confiança e falta de hábito — três coisas que dá para treinar.</p>
+      </div>
+
+      <ul class="plain-list">
+        <li>Golpes de phishing costumam imitar exatamente a comunicação visual de bancos e serviços reais, o que engana até usuários experientes.</li>
+        <li>A reutilização da mesma senha em vários sites é uma das causas mais comuns de contas invadidas.</li>
+        <li>Boa parte dos golpes usa urgência artificial  "sua conta será bloqueada em 24h" — para impedir que a vítima pense com calma.</li>
+        <li>Recuperar uma conta roubada costuma ser mais difícil e demorado do que preveni-la.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Teste sua postura de segurança</h2>
+        <p>Um checklist rápido com as práticas que mais reduzem o risco de golpes e invasões  descubra o que você já faz bem e o que vale ajustar.</p>
+      </div>
+      <a href="checklist.html" class="btn btn-ghost">Abrir o checklist</a>
+    </div>
+  </section>
+
+  <!-- VELOCÍMETRO - aparece depois que o checklist tiver respostas -->
+  <section class="section protecao-section" id="resumo-protecao" style="display: none;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Seu nível de proteção</h2>
+        <p>Resultado baseado nas práticas de segurança marcadas no checklist.</p>
+      </div>
+
+      <div class="velocimetro">
+        <div class="velocimetro-arco"></div>
+        <div class="velocimetro-porcentagem" id="protecao-porcentagem">0%</div>
+      </div>
+
+      <p class="protecao-mensagem" id="protecao-mensagem">
+        Complete o checklist para ver seu resultado.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-wordmark">Cyber<span>Guard</span></div>
+        <p>Um projeto educativo sobre cibersegurança, criado para ensinar conceitos de proteção digital em linguagem simples.</p>
+      </div>
+      <div>
+        <h4>Lições</h4>
+        <ul>
+          <li><a href="phishing.html">Phishing</a></li>
+          <li><a href="senhas.html">Senhas fracas</a></li>
+          <li><a href="golpes.html">Golpes online</a></li>
+          <li><a href="malware.html">Malware</a></li>
+          <li><a href="contas.html">Roubo de contas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Projeto</h4>
+        <ul>
+          <li><a href="checklist.html">Checklist de segurança</a></li>
+          <li><a href="sobre.html">Sobre o projeto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CyberGuard — projeto educativo sem fins comerciais.</span>
+      <span>Não substitui orientação profissional de segurança.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var resumo = document.getElementById('resumo-protecao');
+  var porcentagem = document.getElementById('protecao-porcentagem');
+  var arco = document.querySelector('.velocimetro-arco');
+  var mensagem = document.getElementById('protecao-mensagem');
+
+  if (!resumo || !porcentagem || !arco) return;
+
+  try {
+    var salvo = localStorage.getItem('cyberguard-checklist');
+
+    if (!salvo) return;
+
+    var respostas = JSON.parse(salvo);
+
+    var marcados = Object.keys(respostas).filter(function (id) {
+      return respostas[id] === true;
+    }).length;
+
+    var total = 10;
+    var porcentagemFinal = Math.round((marcados / total) * 100);
+
+    resumo.style.display = 'block';
+
+    porcentagem.textContent = porcentagemFinal + '%';
+
+    var graus = porcentagemFinal * 1.8;
+
+    arco.style.setProperty('--progresso', graus + 'deg');
+
+    if (porcentagemFinal >= 90) {
+      mensagem.textContent = 'Excelente! Sua postura de segurança está muito boa.';
+    } else if (porcentagemFinal >= 70) {
+      mensagem.textContent = 'Muito bem! Você já está bem protegido, mas ainda pode melhorar.';
+    } else if (porcentagemFinal >= 40) {
+      mensagem.textContent = 'Você está no caminho certo. Ainda existem alguns pontos para melhorar.';
+    } else {
+      mensagem.textContent = 'Ainda há vários pontos de segurança que precisam de atenção.';
+    }
+
+  } catch (e) {
+    /* Ignora caso o localStorage não esteja disponível */
+  }
+});
+</script>
+
+</body>
+</html>
